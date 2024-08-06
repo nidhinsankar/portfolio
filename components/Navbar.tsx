@@ -1,4 +1,5 @@
 "use client";
+import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 const Navbar = () => {
   return (
@@ -8,7 +9,9 @@ const Navbar = () => {
       className="flex fixed shadow-xl inset-0 w-full top-4 z-30 max-w-7xl bg-blue-300 h-20 rounded-full items-center justify-between px-5 mx-auto"
     >
       <div>
-        <h2>DevFolio</h2>
+        <h2 className={cn("bg-red-400 py-4", "px-7", "rounded-lg")}>
+          DevFolio
+        </h2>
       </div>
       <ul className="flex gap-6">
         <li>About</li>
