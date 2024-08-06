@@ -1,6 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
+import Link from "next/link";
 const Navbar = () => {
   return (
     <motion.nav
@@ -14,9 +15,10 @@ const Navbar = () => {
         </h2>
       </div>
       <ul className="flex gap-6">
-        <li>About</li>
-        <li>Service</li>
-        <li>Work</li>
+        <Link href={"/about"}>About</Link>
+        <Link href={"/services"}>Service</Link>
+        <Link href={"/work"}>Work</Link>
+        <Link href={"/dashboard"}>Dashboard</Link>
       </ul>
     </motion.nav>
   );
