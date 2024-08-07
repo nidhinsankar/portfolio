@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Noto_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import BottomNav from "@/components/BottomNav";
+import { cn } from "@/lib/utils";
+import Providers from "./providers";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Noto_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Nidhin Portfolio",
@@ -16,10 +19,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Navbar />
-        {children}
+    <html lang="en" suppressHydrationWarning>
+      <body className={cn(inter.className, " relative h-screen")}>
+        <Providers>
+          {/* <Navbar /> */}
+
+          {children}
+          <BottomNav />
+        </Providers>
       </body>
     </html>
   );
