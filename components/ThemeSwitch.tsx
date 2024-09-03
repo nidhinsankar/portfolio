@@ -27,9 +27,13 @@ const ThemeSwitch = () => {
     );
 
   if (resolvedTheme === "dark")
-    return <SunIcon onClick={() => setTheme("light")} />;
+    return (
+      <SunIcon className="cursor-pointer" onClick={() => setTheme("light")} />
+    );
   if (resolvedTheme === "light")
-    return <MoonIcon onClick={() => setTheme("dark")} />;
+    return (
+      <MoonIcon className="cursor-pointer" onClick={() => setTheme("dark")} />
+    );
 };
 
 export default ThemeSwitch;

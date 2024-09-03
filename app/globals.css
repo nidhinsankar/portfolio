@@ -12,10 +12,14 @@
 
 :root {
   background-color: #f5f5f5;
-  color: #0f0f0f;
+  color: #292828;
+  --color-hover: #c5c3c3;
+  --card-bg: #b5c0d0;
 }
 
 [data-theme="dark"] {
-  background-color: #343a40;
-  color: #fff;
+  background-color: #222222;
+  color: #848484;
+  --color-hover: #000;
+  --card-bg: #2c3333;
 }

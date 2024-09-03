@@ -21,12 +21,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={cn(inter.className, " relative h-screen")}>
-        <Providers>
-          {/* <Navbar /> */}
+        {/* <Providers> */}
+        {/* <Navbar /> */}
 
-          {children}
-          <BottomNav />
-        </Providers>
+        {children}
+        <BottomNav />
+        {/* </Providers> */}
       </body>
     </html>
   );
