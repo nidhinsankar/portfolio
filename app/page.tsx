@@ -1,17 +1,13 @@
-import About from "@/components/About";
-import Template from "@/components/Template";
+import { HeroSection } from "@/components/hero-section";
 
 export default function Home() {
   return (
     <>
+      <HeroSection />
       <div className="h-screen flex flex-col justify-center items-center">
-        <Template>
-          <h2 className="">Hi I'm Nidhin</h2>
-          <h4>Frontend Developer</h4>
-          <p>How can i help you</p>
-        </Template>
+        <h2 className="">Hi I'm Nidhin</h2>
+        <p>I design and code Websites</p>
       </div>
-      <About />
     </>
   );
 }

@@ -1,27 +1,13 @@
-"use client";
-import { cn } from "@/lib/utils";
-import { motion } from "framer-motion";
-import Link from "next/link";
-const Navbar = () => {
+export const Navbar = () => {
   return (
-    <motion.nav
-      initial={{ opacity: 0.5, y: 45 }}
-      animate={{ opacity: 1, y: 0 }}
-      className="flex fixed shadow-xl inset-0 w-full top-4 z-30 max-w-7xl bg-blue-300 h-20 rounded-full items-center justify-between px-5 mx-auto"
-    >
-      <div>
-        <h2 className={cn("bg-red-400 py-4", "px-7", "rounded-lg")}>
-          DevFolio
-        </h2>
-      </div>
-      <ul className="flex gap-6">
-        <Link href={"/about"}>About</Link>
-        <Link href={"/services"}>Service</Link>
-        <Link href={"/work"}>Work</Link>
-        <Link href={"/dashboard"}>Dashboard</Link>
-      </ul>
-    </motion.nav>
+    <div className="flex justify-between items-center sticky top-4 px-3 rounded-md opacity-80 w-[760px] mx-auto bg-red-400 h-20">
+      <h2>Nidhin Sankar</h2>
+      <nav className="flex justify-between items-center gap-3">
+        <h1>Articles</h1>
+        <h1>Projects</h1>
+        <h1>Github</h1>
+        <h1>Twitter</h1>
+      </nav>
+    </div>
   );
 };
-
-export default Navbar;

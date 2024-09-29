@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Noto_Sans } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import BottomNav from "@/components/BottomNav";
 import { cn } from "@/lib/utils";
-import Providers from "./providers";
+import { Navbar } from "@/components/navbar";
 
 const inter = Noto_Sans({ subsets: ["latin"] });
 
@@ -22,10 +20,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={cn(inter.className, " relative h-screen")}>
         {/* <Providers> */}
-        {/* <Navbar /> */}
+        <Navbar />
 
         {children}
-        <BottomNav />
         {/* </Providers> */}
       </body>
     </html>
