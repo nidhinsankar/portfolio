@@ -1,13 +1,15 @@
-import { HeroSection } from "@/components/hero-section";
+import About from "@/components/about";
+import ContactForm from "@/components/contact-form";
+import Experiences from "@/components/experience";
+import Projects from "@/components/projects";
 
 export default function Home() {
   return (
-    <>
-      <HeroSection />
-      <div className="h-screen flex flex-col justify-center items-center">
-        <h2 className="">Hi I'm Nidhin</h2>
-        <p>I design and code Websites</p>
-      </div>
-    </>
+    <div className="flex flex-col gap-y-5">
+      <About />
+      <Experiences />
+      <Projects />
+      <ContactForm />
+    </div>
   );
 }
