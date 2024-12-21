@@ -1,8 +1,8 @@
 const Experiences = () => {
   return (
-    <div>
+    <div className="w-[660px] mx-auto">
       <h2>Experiences</h2>
-      <div>
+      <div className="bg-gray-300 rounded-md w-[660px] p-3 my-2">
         <h3>S7Works — Hyderabad, Telangana (remote)</h3>
         <h3>Frontend developer(intern) — 09/2021 - 04/2022</h3>
         <ul>
@@ -27,7 +27,7 @@ const Experiences = () => {
           </li>
         </ul>
       </div>
-      <div>
+      <div className="bg-gray-300 rounded-md w-[660px] p-3 my-2">
         <h3>100XSpace — Kanpur (remote)</h3>
         <h3>Frontend Developer Intern — 05/2022 - 05/2023</h3>
         <ul>

@@ -1,6 +1,6 @@
 const ContactForm = () => {
   return (
-    <div>
+    <div className="w-[660px] mx-auto">
       <h2>Contact Form</h2>
       <form>
         <input

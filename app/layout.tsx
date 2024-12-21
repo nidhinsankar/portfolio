@@ -20,7 +20,6 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={cn(inter.className, " relative h-screen")}>
         {/* <Providers> */}
-        <Navbar />
 
         {children}
         {/* </Providers> */}
