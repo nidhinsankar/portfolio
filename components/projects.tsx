@@ -11,7 +11,7 @@ const Projects = () => {
         >
           <Image
             alt="placeholder"
-            src={"/placeholder.svg"}
+            src={project.image_url}
             width={100}
             height={100}
             className="w-full h-full"

@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="w-[660px] mx-auto">
+    <div className="w-[660px] mx-auto bg-gray-200">
       <h2>Hi Iam Nidhin Sankar</h2>
       <h2>Frontend Developer</h2>
       <h3>Crafting digital experiences that inspire</h3>
