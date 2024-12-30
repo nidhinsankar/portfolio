@@ -1,6 +1,12 @@
+import { motion } from "framer-motion";
+
 const About = () => {
   return (
-    <div className="max-w-3xl mx-auto bg-white p-10 rounded-xl shadow-2xl transform transition duration-500 hover:scale-105">
+    <motion.div
+      className="max-w-3xl mx-auto bg-white p-10 rounded-xl shadow-2xl"
+      whileHover={{ scale: 1.05 }}
+      transition={{ duration: 0.3 }}
+    >
       <h2 className="text-4xl font-extrabold text-gray-800 mb-3">
         Hi, I am Nidhin Sankar
       </h2>
@@ -17,7 +23,8 @@ const About = () => {
         interactive realities. I specialize in creating responsive, accessible,
         and performant web applications that solve real-world problems.
       </p>
-    </div>
+    </motion.div>
   );
 };
+
 export default About;

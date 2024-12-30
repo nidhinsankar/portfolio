@@ -1,5 +1,6 @@
 import { PROJECTS_LIST } from "@/lib/constants";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
@@ -7,9 +8,11 @@ const Projects = () => {
       <h2 className="text-4xl font-extrabold text-gray-800 mb-8">Projects</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {PROJECTS_LIST.map((project) => (
-          <div
+          <motion.div
             key={project.project_name}
-            className="bg-white rounded-xl shadow-lg p-6 transform transition duration-500 hover:scale-105"
+            className="bg-white rounded-xl shadow-lg p-6"
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.3 }}
           >
             <Image
               alt={project.project_name}
@@ -35,7 +38,7 @@ const Projects = () => {
                 Website
               </a>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

@@ -1,10 +1,16 @@
+import { motion } from "framer-motion";
+
 const Experiences = () => {
   return (
     <div className="max-w-3xl mx-auto p-10">
       <h2 className="text-4xl font-extrabold text-gray-800 mb-6">
         Experiences
       </h2>
-      <div className="bg-white rounded-xl shadow-lg p-6 mb-6 transform transition duration-500 hover:scale-105">
+      <motion.div
+        className="bg-white rounded-xl shadow-lg p-6 mb-6"
+        whileHover={{ scale: 1.05 }}
+        transition={{ duration: 0.3 }}
+      >
         <h3 className="text-2xl font-semibold text-indigo-600 mb-2">
           S7Works — Hyderabad, Telangana (remote)
         </h3>
@@ -32,8 +38,12 @@ const Experiences = () => {
             security incidents
           </li>
         </ul>
-      </div>
-      <div className="bg-white rounded-xl shadow-lg p-6 transform transition duration-500 hover:scale-105">
+      </motion.div>
+      <motion.div
+        className="bg-white rounded-xl shadow-lg p-6"
+        whileHover={{ scale: 1.05 }}
+        transition={{ duration: 0.3 }}
+      >
         <h3 className="text-2xl font-semibold text-indigo-600 mb-2">
           100XSpace — Kanpur (remote)
         </h3>
@@ -64,7 +74,7 @@ const Experiences = () => {
             token rotation, preventing unauthorized access attempts
           </li>
         </ul>
-      </div>
+      </motion.div>
     </div>
   );
 };
